@@ -10,6 +10,10 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
+//検査
+//app.use(express.static(__dirname + '/public'));
+//
+
 app.post("/", (req, res) => {let message = req.body.message;
     console.log(message);
     let datetime = new Date();
